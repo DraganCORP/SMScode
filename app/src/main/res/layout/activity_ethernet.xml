@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context=".Ethernet_Activity">
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smscode_1_0"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginTop="20dp">
+    </TextView>
+
+    <TextView
+        android:id="@+id/logo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:text="@string/ethernetlogo_logo"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textAllCaps="false">
+    </TextView>
+
+    <TextView
+        android:id="@+id/LS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo2"
+        android:text="@string/logo_ls"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/ls_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LS"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:inputType="number"
+        android:maxLength="11"
+        android:autofillHints="username"
+        tools:ignore="LabelFor">
+    </EditText>
+
+    <TextView
+        android:id="@+id/hard_number_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ls_input"
+        android:text="@string/hard_number_logo"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/hard_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hard_number_logo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:maxLength="20"
+        android:inputType="textMultiLine"
+        android:autofillHints="username"
+        tools:ignore="LabelFor">
+    </EditText>
+
+    <TextView
+        android:id="@+id/model_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hard_text"
+        android:text="@string/model_rout"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold">
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/model_logo"
+        android:background="@null"
+        android:padding="25dp"
+        />
+
+</RelativeLayout>

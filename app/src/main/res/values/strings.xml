@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SMSCode 1.0</string>
+    <string name="smscode_1_0">SMSCode 1.0</string>
+    <string name="ethernetlogo_logo">Активация учетной записи и привязка оборудования</string>
+    <string name="logo_ls">Лицевой счёт</string>
+    <string name="activ_int">Активировать ШПД</string>
+    <string name="activ_tv">Активировать ЦТВ</string>
+    <string name="hard_number_logo">Серийный номер</string>
+    <string name="model_rout">Модель</string>
+    <string-array name="ModelRouter">
+        <item>DIR-842</item>
+        <item>7022</item>
+        <item>DIR-615</item>
+        <item>item</item>
+    </string-array>
+</resources>
