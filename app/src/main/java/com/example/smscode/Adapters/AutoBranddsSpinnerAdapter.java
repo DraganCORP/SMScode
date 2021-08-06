@@ -15,8 +15,8 @@ import java.util.ArrayList;
 
 public class AutoBranddsSpinnerAdapter extends BaseAdapter
 {
-    private LayoutInflater layoutInflater;
-    private ArrayList<AutoBrandClass> autoBrandsList;
+    private final LayoutInflater layoutInflater;
+    private final ArrayList<AutoBrandClass> autoBrandsList;
 
     public AutoBranddsSpinnerAdapter(Context context, ArrayList<AutoBrandClass> autoBrandsList)
     {
