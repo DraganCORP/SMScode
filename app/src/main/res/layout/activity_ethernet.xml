@@ -109,6 +109,7 @@
         android:layout_below="@id/model_logo"
         android:background="@null"
         android:padding="25dp"
+        android:popupBackground="@color/transparent"
         />
 
 </RelativeLayout>
