@@ -3,14 +3,14 @@ package com.example.smscode.AdditionalClasses;
 public class AutoBrandClass
 {
     private String brandName;
-    private String officialSite;
+    public String idnumber;
     private int brandLogo;
 
-    public AutoBrandClass(String brandName, String oficialSite, int brandLogo)
+    public AutoBrandClass(String brandName, String idnumber, int brandLogo)
     {
         this.brandName = brandName;
         this.brandLogo = brandLogo;
-        this.officialSite = oficialSite;
+        this.idnumber = idnumber;
     }
 
     public String getBrandName() {
@@ -21,8 +21,8 @@ public class AutoBrandClass
         return brandLogo;
     }
 
-    public String getofficialSite() {
-        return officialSite;
+    public String getIdnumber() {
+        return idnumber;
     }
 
 

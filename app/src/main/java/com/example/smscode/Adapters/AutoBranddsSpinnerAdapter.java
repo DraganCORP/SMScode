@@ -54,7 +54,7 @@ public class AutoBranddsSpinnerAdapter extends BaseAdapter
         tvBrandName.setText(autoBrand.getBrandName());
 
         TextView tvBrandSite = (TextView) view.findViewById(R.id.tvBrandSite);
-        tvBrandSite.setText(autoBrand.getofficialSite());
+        tvBrandSite.setText(autoBrand.getIdnumber());
 
         ImageView ivBrandLogo = (ImageView) view.findViewById(R.id.ivBrandLogo);
         ivBrandLogo.setImageResource(autoBrand.getBrandLogo());

@@ -7,6 +7,8 @@
     <string name="activ_tv">Активировать ЦТВ</string>
     <string name="hard_number_logo">Серийный номер</string>
     <string name="model_rout">Модель</string>
+    <string name="smart_card_logo">Номер Смарт карты</string>
+    <string name="logo2">Прописка оборудования ЦТВ</string>
     <string-array name="ModelRouter">
         <item>DIR-842</item>
         <item>7022</item>

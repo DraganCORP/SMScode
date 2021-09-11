@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/logo"
-    tools:context=".Ethernet_Activity">
+    tools:context=".CTV">
 
     <TextView
         android:id="@+id/logo"
@@ -24,11 +24,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/logo"
-        android:text="@string/ethernetlogo_logo"
+        android:text="@string/logo2"
         android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:textAllCaps="false">
     </TextView>
@@ -62,11 +62,11 @@
     </EditText>
 
     <TextView
-        android:id="@+id/hard_number_logo"
+        android:id="@+id/smart_card_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ls_input"
-        android:text="@string/hard_number_logo"
+        android:text="@string/smart_card_logo"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
@@ -76,10 +76,64 @@
     </TextView>
 
     <EditText
-        android:id="@+id/hard_text"
+        android:id="@+id/smart_card_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/hard_number_logo"
+        android:layout_below="@id/smart_card_logo"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:maxLength="20"
+        android:inputType="textMultiLine"
+        android:autofillHints="username"
+        tools:ignore="LabelFor">
+    </EditText>
+
+    <TextView
+        android:id="@+id/snlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smart_card_text"
+        android:text="Серийный номер"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAllCaps="false"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/sntext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/snlogo"
+        android:background="@drawable/input_design"
+        android:padding="10dp"
+        android:maxLength="20"
+        android:inputType="textMultiLine"
+        android:autofillHints="username"
+        tools:ignore="LabelFor">
+    </EditText>
+
+    <TextView
+        android:id="@+id/chip_id_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner"
+        android:text="Номер чипа"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/chipid_id_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chip_id_logo"
         android:layout_marginTop="20dp"
         android:background="@drawable/input_design"
         android:padding="10dp"
@@ -93,12 +147,11 @@
         android:id="@+id/model_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/hard_text"
+        android:layout_below="@+id/sntext"
         android:text="@string/model_rout"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
         android:textAllCaps="false"
         android:textStyle="bold">
     </TextView>
@@ -128,18 +181,4 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Button
-        android:id="@+id/join_button"
-        android:layout_width="350dp"
-        android:layout_height="100dp"
-        android:layout_below="@id/spinner"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/input_design"
-        android:text="@string/activ_int"
-        android:textAllCaps="false"
-        android:textSize="25sp"
-        android:textStyle="bold">
-    </Button>
 </RelativeLayout>

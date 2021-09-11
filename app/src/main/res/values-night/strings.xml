@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smart_card_logo">Номер Смарт карты</string>
+    <string name="logo2">Прописка оборудования ЦТВ</string>
+</resources>
